@@ -1,0 +1,10 @@
+language: csharp
+solution: ./InsuranceCompany.sln 
+dist: bionic
+mono: none
+dotnet: 5.0
+install: 
+    - dotnet restore
+script:
+    - dotnet build
+    - dotnet test ./InsuranceCompany.API.Tests/InsuranceCompany.API.Tests.csproj  
